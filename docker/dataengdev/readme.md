@@ -19,7 +19,9 @@ From the local directory of this repo (`i.e. where Dockerfile is present`) run t
 
 > docker build -t dedev:latest .
 
-> When doing for first time, base image ubuntu:18.04 will be pulled from DockerHub
+```
+When doing for first time, base image ubuntu:18.04 will be pulled from DockerHub
+```
 
 ## Verify Image
 
@@ -39,7 +41,7 @@ The above command will kick off 2 containers (`mysql` and `dedev`).
 Though the container will be started in few seconds. Please wait for a minute to allow all the services like namenode, datanode, hiveserver2 to kick in
 ```
 
-on the container is up and running for a minute, below command will enable to start a session
+once the container is up and running for a minute, below command will enable to start a session
 
 > docker exec -it dedev bash
 
