@@ -1,0 +1,36 @@
+version: "3.1"
+services:
+  hive-meta:
+    image: mysql:8.0.21
+    container_name: hive-meta
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306"
+    networks:
+      - docnet
+    volumes:
+      - volmysql:/var/lib/mysql
+
+  dedev:
+    image: dedev:latest
+    container_name: dedev
+    ports:
+      - "60001:50070" # Namenode
+      - "60002:50075" # DataNode
+      - "60003:8088"  # Resource Manager
+      - "60004:19888" # History server
+      - "60005:4040"  # Spark UI
+    networks:
+      - docnet
+    volumes:
+      - volhadoop:/home/hadoopuser/.shared_data
+    depends_on:
+      - hive-meta
+
+volumes:
+  volmysql:
+  volhadoop:
+
+networks:
+  docnet:

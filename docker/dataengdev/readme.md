@@ -1,0 +1,9 @@
+Artifacts Download
+-------------------
+
+Download below artifacts and place it in artifacts folder before building docker image
+
+https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz
+https://downloads.apache.org/hive/hive-2.3.7/apache-hive-2.3.7-bin.tar.gz
+https://www.apache.org/dyn/closer.lua/spark/spark-2.4.6/spark-2.4.6-bin-hadoop2.7.tgz
+https://dev.mysql.com/downloads/connector/j/ -> Ubuntu Linux -> 18.04 
