@@ -34,7 +34,7 @@ All these commands to be run from the location where Dockerfile/docker-compose.y
 ```
 This repo includes `docker-compose.yml` and hence docker-compose will be easier option to run both `dedev` and dependent `mysql` container.
 
-> docker-compose up - d
+> docker-compose up -d
 
 The above command will kick off 2 containers (`mysql` and `dedev`). 
 ```
