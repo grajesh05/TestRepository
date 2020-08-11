@@ -1,4 +1,4 @@
-# Artifacts Download
+# How to build image and run?
 
 ## Clone
 
