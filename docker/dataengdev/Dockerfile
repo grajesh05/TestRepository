@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEL Rajesh Gomathinayagam
+LABEL maintainer="Rajesh Gomathinayagam"
 
 # -----------------
 # Tool installation
